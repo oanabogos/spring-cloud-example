@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: product-catalog-service
+  profiles:
+    active: dev,prod
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: root
+      password: s3cre3t
