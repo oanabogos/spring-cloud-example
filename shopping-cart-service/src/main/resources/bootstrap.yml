@@ -2,9 +2,16 @@ spring:
   application:
     name: shopping-cart-service
   profiles:
-    active: dev,prod
+    active: dev
   cloud:
     config:
       uri: http://localhost:8888
       username: root
-      password: s3cre3t
+      password: s3cr3t
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    secret: guest
+server:
+  port: 8081
